@@ -10,36 +10,28 @@
 [![Project Status](https://img.shields.io/badge/Status-Active-green?style=for-the-badge)](https://github.com/khdxsohee/OrderEase)
 -----
 
-[](https://www.google.com/search?q=https://github.com/khdxsohee/OrderEase/blob/main/LICENSE)
-[](https://www.google.com/search?q=https://github.com/khdxsohee/OrderEase/stargazers)
-[](https://www.google.com/search?q=https://github.com/khdxsohee/OrderEase/network/members)
-[](https://www.php.net/)
-[](https://www.mysql.com/)
-[](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[](https://www.google.com/search?q=https://github.com/khdxsohee/OrderEase/graphs/commit-activity)
-
 ## Table of Contents
 
-  * [🌟 Introduction]
-  * [✨ Features]
-  * [🚀 Getting Started]
-      * [Prerequisites]
-      * [Installation Steps]
-          * [1. Clone the Repository]
-          * [2. Database Setup]
-          * [3. Configure Database Connection]
-          * [4. Place Project Files]
-  * [💡 Usage]
-      * [Admin Panel]
-      * [Customer Tracking Interface]
-  * [📂 Project Structure]
-  * [🛠️ Customization]
-  * [🔒 Security Considerations]
-  * [🛣️ Future Enhancements]
-  * [🐛 Troubleshooting]
-  * [🤝 Contributing]
-  * [📜 License]
-  * [📞 Contact]
+  * 🌟 Introduction
+  * ✨ Features
+  * 🚀 Getting Started
+      * Prerequisites
+      * Installation Steps
+          * 1. Clone the Repository
+          * 2. Database Setup
+          * 3. Configure Database Connection
+          * 4. Place Project Files
+  * 💡 Usage
+      * Admin Panel
+      * Customer Tracking Interface
+  * 📂 Project Structure
+  * 🛠️ Customization
+  * 🔒 Security Considerations
+  * 🛣️ Future Enhancements
+  * 🐛 Troubleshooting
+  * 🤝 Contributing
+  * 📜 License
+  * 📞 Contact
 
 -----
 
