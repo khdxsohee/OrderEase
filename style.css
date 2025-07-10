@@ -1,0 +1,431 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Changed to flex-start to allow content to flow down */
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Ensures padding doesn't add to the width */
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.message {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e9f7ef;
+    color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.tracking-details-card {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    margin-top: 20px;
+}
+
+.tracking-details-card p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.tracking-details-card p strong {
+    color: #0056b3;
+    display: inline-block;
+    width: 120px; /* Align labels */
+}
+
+/* Icons styling */
+.fa-hourglass-half, .fa-box { color: #ffc107; } /* Yellow for pending */
+.fa-check-circle, .fa-clipboard-check { color: #28a745; } /* Green for complete */
+.fa-undo-alt, .fa-times-circle { color: #dc3545; } /* Red for cancelled/refunded */
+.fa-cogs, .fa-shipping-fast, .fa-truck { color: #17a2b8; } /* Blue/cyan for in-progress */
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+/* style.css additions */
+.product-entry {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.product-entry input[type="text"] {
+    flex-grow: 2; /* Allow product name to take more space */
+}
+
+.product-entry input[type="number"] {
+    width: 80px; /* Fixed width for quantity */
+    text-align: center;
+}
+
+.product-entry button.remove-product {
+    background-color: #dc3545; /* Red for remove button */
+    padding: 8px 12px;
+    font-size: 0.9em;
+    min-width: unset; /* Override default button width */
+}
+
+.product-entry button.remove-product:hover {
+    background-color: #c82333;
+}
+
+#add_product {
+    background-color: #28a745; /* Green for add button */
+    margin-top: 10px;
+}
+
+#add_product:hover {
+    background-color: #218838;
+}
+
+.product-list {
+    list-style-type: disc; /* Or none if you prefer */
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.product-list li {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* --- view_tracking.php Specific Styles (Modern & Professional) --- */
+
+/* General page title for tracking details */
+.page-title {
+    text-align: center;
+    color: #1a237e; /* Deep blue */
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between icon and text */
+}
+
+.page-title .fas {
+    font-size: 1.2em;
+    color: #007bff; /* Primary blue for icon */
+}
+
+/* Tracking Card Container */
+.tracking-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden; /* Ensures border-radius applies correctly */
+    border: 1px solid #e0e0e0;
+}
+
+/* Card Header */
+.card-header {
+    background-color: #007bff; /* Primary blue */
+    color: white;
+    padding: 20px 30px;
+    border-bottom: 1px solid #0056b3;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.7em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-header h3 .fas {
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.tracking-id-value {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Card Body - Flexbox for layout */
+.card-body {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns by default */
+    gap: 25px 30px; /* Row and column gap */
+}
+
+/* Single detail item styling */
+.detail-item {
+    display: flex;
+    flex-direction: column; /* Stack label and value */
+    padding: 0;
+    border-bottom: 1px dashed #eee; /* Light separator */
+    padding-bottom: 15px;
+}
+
+.detail-item:last-child {
+    border-bottom: none; /* No border for the last item */
+}
+
+/* When there's only one item in a row, span across both columns */
+.detail-item.full-width {
+    grid-column: 1 / -1; /* Spans across all columns */
+}
+.detail-item.full-width:last-child {
+    border-bottom: none; /* No border for the last item */
+}
+
+
+.detail-label {
+    font-weight: 600;
+    color: #4a4a4a;
+    font-size: 0.95em;
+    margin-bottom: 8px; /* Space between label and value */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between label text and its icon */
+}
+
+.detail-label .fas {
+    color: #007bff; /* Primary blue for detail label icons */
+    font-size: 1.1em;
+}
+
+.detail-value {
+    font-size: 1.05em;
+    color: #333;
+    line-height: 1.6;
+    padding-left: 5px; /* Slight indent for value */
+}
+
+/* Product list within tracking details */
+.product-list {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.product-list li {
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95em;
+    color: #495057;
+    border: 1px solid #e9ecef;
+}
+
+.product-list li .fas {
+    color: #6c757d; /* Grey icon for product list items */
+    font-size: 0.9em;
+}
+
+/* Status specific items */
+.detail-item.status-item {
+    display: flex;
+    flex-direction: row; /* Keep label, text, and icon in a row */
+    align-items: center;
+    justify-content: space-between; /* Space out content */
+    padding-right: 10px; /* Add some padding for the icon */
+}
+
+.detail-item.status-item .detail-label {
+    margin-bottom: 0; /* No margin if row direction */
+}
+
+.detail-item .status-text {
+    font-weight: 600;
+    flex-grow: 1; /* Allow status text to take available space */
+    text-align: right; /* Align status text to the right */
+    margin-right: 10px; /* Space before icon */
+}
+
+.detail-item .status-icon .fas {
+    font-size: 1.5em; /* Larger icons for statuses */
+}
+
+/* Status specific icon colors */
+.status-pending { color: #ffc107; } /* Yellow */
+.status-paid, .status-delivered { color: #28a745; } /* Green */
+.status-refunded, .status-cancelled { color: #dc3545; } /* Red */
+.status-processing, .status-shipped, .status-out-for-delivery { color: #17a2b8; } /* Cyan/Blue */
+
+/* Message styling (general, can be reused) */
+.message {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.message.error {
+    background-color: #fdd;
+    color: #d9534f;
+    border: 1px solid #d9534f;
+}
+
+.message.error .fas {
+    color: #d9534f;
+}
+
+/* Back link styling */
+.back-link {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.1em;
+}
+
+.back-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: #f0f8ff; /* Light blue background */
+    border: 1px solid #cee0f0;
+    border-radius: 8px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.back-link a:hover {
+    background-color: #e6f2ff;
+    color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.1);
+}
+
+.back-link a .fas {
+    font-size: 1em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-body {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+        gap: 20px;
+    }
+
+    .detail-item.status-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .detail-item.status-item .status-text {
+        text-align: left;
+        margin-left: 30px; /* Indent status text under label */
+    }
+    .detail-item.status-item .status-icon {
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+}
