@@ -193,13 +193,16 @@ This is the public-facing portal for your customers.
 ## 📂 Project Structure
 
 ```
-OrderEase/
+OrderEase/tracking-system
 ├── admin_add.php            # Admin page to add new tracking entries
 ├── admin_update.php         # Admin page to update existing tracking entries
+├── admin_dashboard.php         # Admin page to update existing tracking entries
+├── admin_delete.php         # Admin page to update existing tracking entries
 ├── db_config.php            # Database connection configuration
 ├── track.php                # Customer-facing page to input tracking ID
 ├── view_tracking.php        # Customer-facing page to display tracking details
 └── style.css                # Global CSS styles for the application
+├── readme.md         # Admin page to update existing tracking entries
 ```
 
 -----
